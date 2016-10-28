@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8"> <!-- Me sirve para colocar acentos y otros caracteres especiales -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<title>Trello</title> <!-- Iniciando  -->
+		<link rel="shortcut icon" href="image/ico/favicon.png"> <!-- "shortcut icon" nos indicaque es tipo icono, relación -->
+		<link rel="stylesheet" href="css/font-awesome.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body >
+		<!-- Inserta aqui tu codigo -->
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12, col-sm-12 text-center">
+						<img src="image/logo-trello.jpg" alt="logo" class="logo">
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Seccion delque contiene el tablero y sus elementos -->
+		<section>
+			<div class="container">
+				<div class="row"> <!-- Row -->
+					<div class="col-xs-12, col-sm-12"> <!-- cols -->
+						<!-- Creo mi contenedor donde se hara la intereaccion -->
+						<div id="tablero"><!-- tablero-->
+							<!-- Creo lista inicial -->
+							<div id="lista">
+								<!-- Creo la "primera" tarjeta -->
+								<div id="anadirLista">Añadir una lista...</div>
+								<!-- Formulario para crear tarjetas -->
+									<div id="formulario">
+										<input type="text" id="inputLista" placeholder="Ingrese una tarea...." >
+										<button type="button" id="guardar" class="btn btn-primary">Guardar</button>
+									</div>
+								</div>
+							</div><!-- lista -->
+						</div><!-- tablero -->
+					</div> <!-- Cols -->
+				</div><!-- Row -->
+			</div>
+		</section>
+		<!-- Se debe agregar JQuery para los plugins -->
+		<script src="js/jquery.js"></script>
+		<!-- Hay que acostumbrarse a colocar el js de bootstrap -->
+		<script src="js/bootstrap.min.js"></script>
+		<script src='js/main.js'></script>
+	</body>
+</html>
